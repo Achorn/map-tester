@@ -19,6 +19,13 @@ svg path {
   fill: #04aa6d;
   stroke: white;
   transition-duration: 300ms;
+  pointer-events: all;
+  :hover {
+    fill: red;
+  }
+}
+svg path :hover {
+  fill: black;
 }
 
 input {
@@ -57,4 +64,23 @@ input {
 
 a {
   padding: 10px;
+}
+
+#coupontooltip {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  padding: 10px 15px;
+  z-index: 5;
+  height: auto;
+  line-height: 30px;
+  margin: 0 auto;
+  color: #313131;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px #eee;
+  transform: translate(-50%, -150%);
+  display: none;
 }
