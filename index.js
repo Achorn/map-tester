@@ -25,6 +25,6 @@ function updateMap(newYear) {
     state = document.getElementById(id);
     if (usMap.get(id) <= newYear) {
       state.style.fill = "brown";
-    } else state.style.fill = "lightblue";
+    } else state.style.fill = "#04aa6d";
   }
 }
