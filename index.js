@@ -29,30 +29,10 @@ function updateMap(newYear) {
   }
 }
 
-// $description = $(".description");
-
-// $(".enabled").hover(
-//   function () {
-//     console.log("ehllo");
-//     $(this).attr("class", "enabled heyo");
-//     $description.addClass("active");
-//     $description.html($(this).attr("id"));
-//   },
-//   function () {
-//     $description.removeClass("active");
-//   }
-// );
-
-// $(document).on("mousemove", function (e) {
-//   $description.css({
-//     left: e.pageX,
-//     top: e.pageY - 70,
-//   });
-// });
-
+// TOOLTIP  functions
 function showTooltip(evt, name, id) {
   text = "<b>" + name + "</b>" + "<br>" + "Converted: " + usMap.get(id);
-  let tooltip = document.getElementById("coupontooltip");
+  let tooltip = document.getElementById("tooltip");
   tooltip.style.display = "block";
   tooltip.innerHTML = text;
   tooltip.style.left = evt.pageX + 10 + "px";
@@ -60,8 +40,7 @@ function showTooltip(evt, name, id) {
 }
 
 function hideTooltip() {
-  var tooltip = document.getElementById("coupontooltip");
-
+  var tooltip = document.getElementById("tooltip");
   tooltip.style.display = "none";
 }
 
@@ -77,10 +56,7 @@ Array.from(paths).forEach((path) => {
   "mouseout touchend".split(" ").forEach((e) =>
     path.addEventListener(e, function () {
       path.style.filter = "brightness(1)";
-
       hideTooltip();
     })
   );
 });
-
-// on mouse move on mouse out

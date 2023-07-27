@@ -20,12 +20,6 @@ svg path {
   stroke: white;
   transition-duration: 300ms;
   pointer-events: all;
-  :hover {
-    fill: red;
-  }
-}
-svg path :hover {
-  fill: black;
 }
 
 input {
@@ -66,7 +60,7 @@ a {
   padding: 10px;
 }
 
-#coupontooltip {
+#tooltip {
   display: none;
   pointer-events: none;
   position: absolute;
