@@ -19,7 +19,6 @@ svg path {
   fill: #04aa6d;
   stroke: white;
   transition-duration: 300ms;
-  pointer-events: all;
 }
 
 input {
