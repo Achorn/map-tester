@@ -31,7 +31,7 @@ function updateMap(newYear) {
 
 // TOOLTIP  functions
 function showTooltip(evt, name, id) {
-  text = "<b>" + name + "</b>" + "<br>" + "Converted: " + usMap.get(id);
+  let text = "<b>" + name + "</b>" + "<br>" + "Converted: " + usMap.get(id);
   let tooltip = document.getElementById("tooltip");
   tooltip.style.display = "block";
   tooltip.innerHTML = text;
